@@ -6,7 +6,6 @@
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(360deg, #b4182d, black);
-  color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,9 +20,9 @@ header {
   align-items: center;
 }
 nav {
-    margin-right: 150px;
-    display: flex;
-    gap: 20px;
+  margin-right: 150px;
+  display: flex;
+  gap: 20px;
 }
 nav a {
   color: #b4182d;
@@ -39,7 +38,7 @@ header h2 {
   color: #b4182d;
   font-size: 24px;
   font-weight: 600;
-  letter-spacing: 1px;
+  font-family: monospace;
 }
 nav a:hover {
   color: #ffffff;
@@ -51,7 +50,7 @@ nav a:hover {
   align-items: center;
 }
 .about-content {
-  max-width: 800px;
+  max-width: 900px;
 }
 .about-content h1 {
   margin-bottom: 5px;
@@ -69,7 +68,7 @@ nav a:hover {
 }
 .contact-info {
   display: flex;
-  text-align:  justify;
+  text-align: justify;
   gap: 40px;
   margin-top: 13px;
   color: #fda481;
@@ -80,4 +79,75 @@ nav a:hover {
   display: flex;
   align-items: center;
   gap: 2px;
+}
+.tools {
+  min-height: calc(100vh - 230px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+.tools-title {
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #fda481;
+}
+.tools-columns {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+.tools-box {
+  border: 1px solid #b4182d;
+  border-radius: 10px;
+  padding: 28px 24px;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+.tools-box-one {
+  background: #54162b;
+}
+.tools-box-two {
+  background: #54162b;
+}
+.tools-box-three {
+  background: #54162b;
+}
+.tools-box_title {
+  font-size: 18px;
+  color: #b4182d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.tools-box_desc {
+  font-size: 13px;
+  font-weight: normal;
+  color: #fda481;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.tools-list {
+  list-style: none;
+}
+.tools-list li {
+  font-size: 15px;
+  color: #fda481;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(253, 164, 129, 0.15);
+}
+.tools-list li:last-child {
+  border-bottom: none;
+}
+.custom-line {
+  border: none;
+  border-top: 2px solid black;
+  width: 60%;
+  margin: 20px auto;
+  opacity: 0.3;
 }
